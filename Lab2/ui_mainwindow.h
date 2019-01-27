@@ -46,7 +46,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(589, 540);
+        MainWindow->resize(589, 526);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         picture = new QLabel(centralWidget);
@@ -58,7 +58,29 @@ public:
         label_2 = new QLabel(centralWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(170, 0, 231, 51));
-        label_2->setCursor(QCursor(Qt::SizeBDiagCursor));
+        QPalette palette;
+        QBrush brush(QColor(255, 255, 255, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush);
+        QBrush brush1(QColor(10, 14, 240, 255));
+        brush1.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush1);
+        QBrush brush2(QColor(120, 120, 120, 255));
+        brush2.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush2);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
+        label_2->setPalette(palette);
+        QFont font;
+        font.setFamily(QString::fromUtf8("Kozuka Mincho Pr6N R"));
+        font.setPointSize(24);
+        label_2->setFont(font);
+        label_2->setCursor(QCursor(Qt::ArrowCursor));
+        label_2->setAutoFillBackground(true);
         label_2->setFrameShape(QFrame::Panel);
         label_2->setFrameShadow(QFrame::Raised);
         label_2->setAlignment(Qt::AlignCenter);
@@ -76,21 +98,25 @@ public:
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
         todaySoup_Button = new QPushButton(layoutWidget);
         todaySoup_Button->setObjectName(QString::fromUtf8("todaySoup_Button"));
+        todaySoup_Button->setCursor(QCursor(Qt::PointingHandCursor));
 
         horizontalLayout->addWidget(todaySoup_Button);
 
         chefSpecial_Button = new QPushButton(layoutWidget);
         chefSpecial_Button->setObjectName(QString::fromUtf8("chefSpecial_Button"));
+        chefSpecial_Button->setCursor(QCursor(Qt::PointingHandCursor));
 
         horizontalLayout->addWidget(chefSpecial_Button);
 
         dailyFish_Button = new QPushButton(layoutWidget);
         dailyFish_Button->setObjectName(QString::fromUtf8("dailyFish_Button"));
+        dailyFish_Button->setCursor(QCursor(Qt::PointingHandCursor));
 
         horizontalLayout->addWidget(dailyFish_Button);
 
         exit_Button = new QPushButton(layoutWidget);
         exit_Button->setObjectName(QString::fromUtf8("exit_Button"));
+        exit_Button->setCursor(QCursor(Qt::PointingHandCursor));
 
         horizontalLayout->addWidget(exit_Button);
 
@@ -117,7 +143,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Cline Diner Specials", nullptr));
         picture->setText(QString());
         label_2->setText(QApplication::translate("MainWindow", "Cline Diner", nullptr));
         namePrice_Label->setText(QString());

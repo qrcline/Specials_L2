@@ -18,41 +18,24 @@ void MainWindow::loadImage()
     QString soupFilename =":/Pictures/clamChowder.jpg";
     QString fishFilename =":/Pictures/Sesame-Crusted-Ahi-Tuna-with-Orange-Teriyaki-Sauce-500.jpg";
     QString dinerFilename =":/Pictures/diner.jpg";
-    std::cout<<"load image"<<std::endl;
+    //std::cout<<"load image"<<std::endl;
 
     if(imageSteak.load(steakFilename))
     {
-        std::cout<<"Steak loaded ok"<<std::endl;
         imageSteak=imageSteak.scaled(ui->picture->size(),Qt::KeepAspectRatioByExpanding);
     }
-    else {
-        std::cout<<"Image Load not ok"<<std::endl;
-    }
-
     if(imageSoup.load(soupFilename))
     {
-        std::cout<<"Soup loaded ok"<<std::endl;
         imageSoup=imageSoup.scaled(ui->picture->size(),Qt::KeepAspectRatioByExpanding);
-    }
-    else {
-        std::cout<<"Image Load not ok"<<std::endl;
     }
 
     if(imageFish.load(fishFilename))
     {
-        std::cout<<"Fish loaded ok"<<std::endl;
         imageFish=imageFish.scaled(ui->picture->size(),Qt::KeepAspectRatioByExpanding);
-    }
-    else {
-        std::cout<<"Image Load not ok"<<std::endl;
     }
     if(imageDiner.load(dinerFilename))
     {
-        std::cout<<"Fish loaded ok"<<std::endl;
         imageDiner=imageDiner.scaled(ui->picture->size(),Qt::KeepAspectRatioByExpanding);
-    }
-    else {
-        std::cout<<"Image Load not ok"<<std::endl;
     }
 }
 MainWindow::~MainWindow()
@@ -64,7 +47,7 @@ void MainWindow::on_chefSpecial_Button_clicked()
 {
     ui->picture->setPixmap(imageSteak);
     //Sets decription
-     std::cout<<"Button Clicked"<<std::endl;
+     //std::cout<<"Button Clicked"<<std::endl;
      QString message="Tomahawk Steak $35";
      ui->namePrice_Label->setText(message);
 

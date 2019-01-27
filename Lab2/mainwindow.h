@@ -25,6 +25,7 @@ private slots:
     void on_exit_Button_clicked();
 
 private:
+
     Ui::MainWindow *ui;
     QPixmap imageSteak;
     QPixmap imageSoup;
