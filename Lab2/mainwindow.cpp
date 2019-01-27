@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     loadImage();
-    //ui->picture->setPixmap(imageSteak);
+    ui->picture->setPixmap(imageDiner);
 }
 
 void MainWindow::loadImage()
@@ -17,7 +17,7 @@ void MainWindow::loadImage()
     QString steakFilename =":/Pictures/HB_01_tomahawk_01.jpg";
     QString soupFilename =":/Pictures/clamChowder.jpg";
     QString fishFilename =":/Pictures/Sesame-Crusted-Ahi-Tuna-with-Orange-Teriyaki-Sauce-500.jpg";
-    QString dinnerFilename =":/Pictures/diner.jpg";
+    QString dinerFilename =":/Pictures/diner.jpg";
     std::cout<<"load image"<<std::endl;
 
     if(imageSteak.load(steakFilename))
@@ -46,7 +46,7 @@ void MainWindow::loadImage()
     else {
         std::cout<<"Image Load not ok"<<std::endl;
     }
-    if(imageDiner.load(fishFilename))
+    if(imageDiner.load(dinerFilename))
     {
         std::cout<<"Fish loaded ok"<<std::endl;
         imageDiner=imageDiner.scaled(ui->picture->size(),Qt::KeepAspectRatioByExpanding);

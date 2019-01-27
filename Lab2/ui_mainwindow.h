@@ -46,7 +46,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(593, 491);
+        MainWindow->resize(589, 540);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         picture = new QLabel(centralWidget);
@@ -97,7 +97,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 593, 21));
+        menuBar->setGeometry(QRect(0, 0, 589, 21));
         menuCline_Diner = new QMenu(menuBar);
         menuCline_Diner->setObjectName(QString::fromUtf8("menuCline_Diner"));
         MainWindow->setMenuBar(menuBar);

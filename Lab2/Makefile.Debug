@@ -147,6 +147,7 @@ compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_resources.cpp
 debug\qrc_resources.cpp: resources.qrc \
 		C:\Qt\5.12.0\msvc2017_64\bin\rcc.exe \
+		Pictures\diner.jpg \
 		Pictures\clamChowder.jpg \
 		Pictures\Sesame-Crusted-Ahi-Tuna-with-Orange-Teriyaki-Sauce-500.jpg \
 		Pictures\HB_01_tomahawk_01.jpg
