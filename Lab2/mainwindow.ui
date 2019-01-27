@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>600</height>
+    <width>593</width>
+    <height>491</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QLabel" name="picture">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>110</y>
-      <width>501</width>
-      <height>211</height>
+      <x>140</x>
+      <y>60</y>
+      <width>311</width>
+      <height>300</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -33,7 +33,7 @@
      <number>3</number>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -64,17 +64,20 @@
    <widget class="QLabel" name="namePrice_Label">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>320</y>
-      <width>121</width>
-      <height>31</height>
+      <x>140</x>
+      <y>360</y>
+      <width>311</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -120,10 +123,16 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>600</width>
-     <height>24</height>
+     <width>593</width>
+     <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuCline_Diner">
+    <property name="title">
+     <string>Cline Diner</string>
+    </property>
+   </widget>
+   <addaction name="menuCline_Diner"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">

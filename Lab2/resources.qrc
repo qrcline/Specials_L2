@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Pictures/clamChowder.jpg</file>
+        <file>Pictures/Sesame-Crusted-Ahi-Tuna-with-Orange-Teriyaki-Sauce-500.jpg</file>
+        <file>Pictures/HB_01_tomahawk_01.jpg</file>
+        <file>Pictures/diner.jpg</file>
+    </qresource>
+</RCC>
